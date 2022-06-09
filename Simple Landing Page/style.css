@@ -1,16 +1,15 @@
-/** global element styling **/
-
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 10;
   box-sizing: border-box;
 }
 
 body {
   background-color: white;
   font-family: "Lato", sans-serif;
+  background: #fff;
 }
 
 #page-wrapper {
@@ -52,8 +51,8 @@ header {
   width: 100vw;
   position: fixed;
   top: 0;
-  min-height: 55px;
-  padding: 0 30px;
+  min-height: 75px;
+  padding: 30 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,11 +60,49 @@ header {
   z-index: 1;
 }
 
+.nav-link{
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  cursor: pointer;
+padding: 10px 30px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: white;
+  text-decoration: none;
+
+  background-color: black;
+  border: 1px ;
+  box-shadow: 0px 5px 10px #0000001a;
+  border-radius: 20px;
+
+  transition: color 0.3s, background 2s;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  border: 1px ;
+  box-shadow: 0px 5px 10px #0000001a;
+  border-radius: 20px;
+  color: grey;
+  background: transparent;
+  background-color: white;
+
+}
 @media (max-width: 600px) {
   header {
     flex-wrap: wrap;
   }
 }
+
+
 
 @media (max-width: 650px) {
   .logo {
@@ -76,7 +113,7 @@ header {
 }
 
 .logo > img {
-  width: 70px;
+  width: 90px;
   height: 70px;
   max-width: 300px;
   display: flex;
@@ -132,8 +169,10 @@ nav > ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 200px;
+  height: 1000px;
   margin-top: 50px;
+  background: url("https://images.unsplash.com/photo-1636800873814-dcbc53df3939?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=754&q=80"); 
+  background-size: cover;
 }
 
 #center-text > h2 {
@@ -214,6 +253,9 @@ nav > ul {
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  background-color: orange;
+  width: 1000px;
+  height: 415px;
 }
 
 #how-it-works > iframe {
@@ -265,11 +307,13 @@ nav > ul {
   margin: 15px 0;
   background-color: #f1c40f;
   font-weight: 400;
+  border-radius: 30px;
 }
 
 .product > button:hover {
   background-color: orange;
   transition: background-color 1s;
+  
 }
 
 @media (max-width: 800px) {
@@ -282,6 +326,61 @@ nav > ul {
     margin: 0 auto;
     margin-bottom: 10px;
   }
+}
+
+#form-sec {
+  margin-top: 40px;
+  padding: 50px 10% 50px 10%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#form {
+  
+  color: #fff;
+  padding-top: 30px;
+  text-align: center;
+}
+
+input {
+  width: 220px;
+  background-color: white;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+
+#submit {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  cursor: pointer;
+padding: 10px 30px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: black;
+  text-decoration: none;
+
+  background-color: white;
+  border: 1px ;
+  box-shadow: 0px 5px 10px #0000001a;
+  border-radius: 20px;
+
+  transition: color 0.3s, background 2s;
+}
+
+#submit:hover {
+  color: grey;
+  background: transparent;
 }
 
 footer {
